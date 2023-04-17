@@ -111,7 +111,8 @@ header .nav-item:hover::after {
 
 #mainCarousel .carousel-caption {
     bottom: 50%;
-    transform: translateY(50%);
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 #mainCarousel .carousel-item:nth-child(1)::before {
@@ -172,14 +173,14 @@ header .nav-item:hover::after {
     margin: 0 5px;
 }
 
-.project .nav-link.active {
-    background-color: var(--primary-color);
-}
-
 .project button {
     border: 1px solid #1a1d2d;
 }
 
+.project .nav-link.active {
+    background-color: var(--primary-color);
+    border: none;
+}
 
 .project .nav-item button {
     color: #1a1d2d;
@@ -208,4 +209,123 @@ header .nav-item:hover::after {
     color: #585858;
 }
 
+/* FEATURE  */
+.feature {
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+}
 
+.feature .overlay {
+    background-color: rgba(7,10,12,.72);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.feature .section-heading {
+    position: relative;
+}
+
+.feature-section {
+    position: relative;
+}
+
+.feature__item {
+    background-color: rgba(255,255,255,.1);
+    padding: 40px;
+    border-radius: 10px;
+    transition: all .5s;
+    border: 1px solid rgba(255,255,255,.1)  ;
+}
+
+.feature__item:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.feature__item i {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.feature__item .card-subtitle {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 25px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.feature__item .card-text {
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* AWARD  */
+.award {
+    padding: 70px 0;
+    position: relative;
+}
+
+.award-bg {
+    background-image: url('../img/memphis_3.png');
+    background-size: 50% auto;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    opacity: .5;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.award-left, .award-right {
+    padding: 45px;
+    position: relative;
+    color: #585858;
+}
+
+.award-left {
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+}
+
+/* FOOTER  */
+footer {
+    background: #222;
+    color: #aaa;
+}
+
+footer .footer__top {
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+footer .footer__icon a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 10px;
+}
+
+footer .footer__bottom {
+    padding-top: 30px;
+    border-top: 1px solid #454545;
+}
