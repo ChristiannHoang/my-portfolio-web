@@ -16,7 +16,33 @@ html, body {
     line-height: 1.5;
 }
 
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #1a1d2d;
+    font-weight: 600;
+}
+
+.section-heading p {
+    color: #585858;
+    line-height: 24px;    
+}
+
 /* ---------------- */
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
 header .navbar-brand i {
     font-size: 45px;
     color: var(--primary-color);
@@ -26,11 +52,7 @@ header .navbar-brand span {
     font-size: 36px;
 }
 
-.nav-item {
-    margin: 0 10px;
-}
-
-.nav-item::after {
+header .nav-item::after {
     content: '';
     display: block;
     width: 0;
@@ -39,7 +61,7 @@ header .navbar-brand span {
     transition: all .5s;
 }
 
-.nav-item:hover::after {
+header .nav-item:hover::after {
     width: 100%;
 }
 
@@ -73,3 +95,117 @@ header .navbar-brand span {
 .navbar .navbar-toggler:focus {
     background-color: #0ea8cf;
 }
+
+/* CAROUSEL  */
+#mainCarousel .overlay {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(39,43,54,.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#mainCarousel .carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+#mainCarousel .carousel-item:nth-child(1)::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/finland.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#mainCarousel .carousel-item:nth-child(2)::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/mountains.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#mainCarousel .carousel-item:nth-child(3)::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/mountains-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#mainCarousel img {
+    width: 140px;
+    height: 140px;
+}
+
+#mainCarousel h5 {
+    font-size: 56px;
+    line-height: 65px;
+}
+
+#mainCarousel p {
+    font-size: 24px;
+}
+
+#mainCarousel button {
+    width: 13px;
+    height: 13px;
+}
+
+#mainCarousel button.active {
+    background-color: var(--primary-color);
+}
+
+/* PROJECT  */
+.project .nav-item {
+    margin: 0 5px;
+}
+
+.project .nav-link.active {
+    background-color: var(--primary-color);
+}
+
+.project button {
+    border: 1px solid #1a1d2d;
+}
+
+
+.project .nav-item button {
+    color: #1a1d2d;
+}
+
+.project__item {
+    margin-top: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.project__item .card-body {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all .5s;
+    border-radius: 0 0 16px 16px;
+}
+
+.project__item:hover .card-body {
+    border-color: var(--primary-color);
+    border-radius: 0 0 16px 16px;
+}
+
+.project__item p {
+    color: #585858;
+}
+
+
