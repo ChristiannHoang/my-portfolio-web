@@ -1,0 +1,75 @@
+/* GLOBAL CSS  */
+:root {
+    --primary-color: #35a22c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Hind', sans-serif;
+    color: #212529;
+    line-height: 1.5;
+}
+
+/* ---------------- */
+header .navbar-brand i {
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+header .navbar-brand span {
+    font-size: 36px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all .5s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+#navbarPort .nav-item .nav-link {
+    color: #fff;
+}
+
+#navbarPort .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+
+#navbarPort .nav-item.active .nav-link {
+    color: var(--primary-color);
+}
+
+#navbarPort .active.nav-item::after {
+    width: 100%;
+}
+
+.navbar .toggler__icon {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.navbar .navbar-toggler {
+    background-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler:focus {
+    background-color: #0ea8cf;
+}
