@@ -1,5 +1,5 @@
-@media screen and (min-width: 320px) {
-    /* HEADER  */
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
     header .navbar-brand i {
         font-size: 8vw;
     }
@@ -55,19 +55,13 @@
     }
 }
 
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-}
-
 /* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    
-}
+@media (max-width: 767.98px) {}
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    /* HEADER  */ 
+
+    /* HEADER  */
     #navbarPort .active.nav-item::after {
         width: 0;
     }
@@ -81,7 +75,7 @@
     }
 
     #navbarPort .nav-item {
-        margin: 0;    
+        margin: 0;
     }
 
     #navbarPort .nav-item .nav-link {
@@ -98,11 +92,7 @@
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-    
-}
+@media (max-width: 1199.98px) {}
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-
-}
+@media (max-width: 1399.98px) {}
