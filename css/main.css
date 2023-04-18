@@ -196,6 +196,7 @@ header .nav-item:hover::after {
     padding: 20px;
     text-align: center;
     border: 1px solid transparent;
+    border-top: none;
     transition: all .5s;
     border-radius: 0 0 16px 16px;
 }
@@ -309,11 +310,6 @@ footer .footer__top {
     margin-bottom: 30px;
 }
 
-footer a {
-    text-decoration: none;
-    color: #aaa;
-}
-
 footer .footer__icon a {
     display: inline-block;
     width: 42px;
@@ -323,6 +319,14 @@ footer .footer__icon a {
     text-align: center;
     line-height: 42px;
     margin-right: 10px;
+    text-decoration: none;
+    color: #aaa;
+    transition: all .5s;
+}
+
+footer .footer__icon a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 footer .footer__bottom {
