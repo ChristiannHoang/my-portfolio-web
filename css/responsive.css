@@ -1,3 +1,60 @@
+@media screen and (min-width: 320px) {
+    /* HEADER  */
+    header .navbar-brand i {
+        font-size: 8vw;
+    }
+
+    header .navbar-brand span {
+        font-size: 7vw;
+    }
+
+    .navbar .toggler__icon {
+        font-size: 5vw;
+    }
+
+    /* CAROUSEL  */
+    #mainCarousel img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #mainCarousel h5 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .myCarousel p {
+        font-size: 5vw;
+    }
+
+    /* PROJECT  */
+    .project .nav-item button {
+        margin-bottom: 16px;
+    }
+
+    .project .section-heading p {
+        text-align: justify;
+    }
+
+    /* FEATURE  */
+    .feature .section-heading p {
+        text-align: justify;
+    }
+
+    .feature .feature__item {
+        margin-bottom: 48px;
+    }
+
+    .feature .col-md-4:last-child .feature__item {
+        margin-bottom: 0;
+    }
+
+    /* AWARD  */
+    .award-bg {
+        background-size: cover;
+    }
+}
+
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
